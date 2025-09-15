@@ -13,7 +13,6 @@ config_version=5
 config/name="Pong"
 run/main_scene="uid://cxh11wh3kdv0j"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 

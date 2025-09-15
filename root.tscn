@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://cxh11wh3kdv0j"]
+[gd_scene load_steps=3 format=3 uid="uid://cxh11wh3kdv0j"]
 
 [ext_resource type="PackedScene" uid="uid://c7hyju050jxhr" path="res://wall.tscn" id="1_pq8q7"]
+[ext_resource type="PackedScene" uid="uid://cc1g12ybwibbo" path="res://paddle.tscn" id="2_pyidc"]
 
 [node name="root" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [358.0, 30.0, 194.0]
+metadata/_edit_vertical_guides_ = [86.0, 320.0, 554.0]
 
 [node name="Background" type="ColorRect" parent="."]
 offset_right = 640.0
@@ -27,8 +30,14 @@ scale = Vector2(1, 4)
 position = Vector2(560, 194)
 scale = Vector2(1, 4)
 
-[node name="Line2D" type="Line2D" parent="."]
+[node name="Divider" type="Line2D" parent="."]
 points = PackedVector2Array(320, 30, 320, 358)
 width = 3.0
 default_color = Color(0.160784, 0.180392, 0.266667, 1)
 round_precision = 1
+
+[node name="PlayerPaddle" parent="." instance=ExtResource("2_pyidc")]
+position = Vector2(101, 194)
+
+[node name="AIPaddle" parent="." instance=ExtResource("2_pyidc")]
+position = Vector2(539, 194)
