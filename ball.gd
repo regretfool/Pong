@@ -1,9 +1,7 @@
 extends CharacterBody2D
-@export var speed: float = 200
+var speed = 3
+var direction = Vector2(randf_range(-1,1), randf_range(-1,1))
 
-func get_input():
-	var input_direction = Input.get_vector("left", "right", "up", "down")
-	velocity = input_direction * speed
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -11,5 +9,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	get_input()
-	move_and_slide()
+	if Input.is_action_pressed("action"):
+		velocity = direction * speed
+	move_and_collide(velocity)
