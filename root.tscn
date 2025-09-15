@@ -7,22 +7,28 @@
 [node name="Background" type="ColorRect" parent="."]
 offset_right = 640.0
 offset_bottom = 480.0
-color = Color(0, 0, 0, 1)
+color = Color(0.0705882, 0.0666667, 0.0862745, 1)
 
 [node name="Wall" parent="." instance=ExtResource("1_pq8q7")]
-position = Vector2(120, 232)
-scale = Vector2(0.762, 5)
-
-[node name="Wall2" parent="." instance=ExtResource("1_pq8q7")]
-position = Vector2(520, 232)
-scale = Vector2(0.762, 5)
-
-[node name="Wall3" parent="." instance=ExtResource("1_pq8q7")]
 position = Vector2(320, 24)
 rotation = 1.5708
-scale = Vector2(0.762, 5)
+scale = Vector2(1, 6)
+
+[node name="Wall2" parent="." instance=ExtResource("1_pq8q7")]
+position = Vector2(320, 364)
+rotation = 1.5708
+scale = Vector2(1, 6)
+
+[node name="Wall3" parent="." instance=ExtResource("1_pq8q7")]
+position = Vector2(80, 194)
+scale = Vector2(1, 4)
 
 [node name="Wall4" parent="." instance=ExtResource("1_pq8q7")]
-position = Vector2(320, 440)
-rotation = 1.5708
-scale = Vector2(0.762, 5)
+position = Vector2(560, 194)
+scale = Vector2(1, 4)
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(320, 30, 320, 358)
+width = 3.0
+default_color = Color(0.160784, 0.180392, 0.266667, 1)
+round_precision = 1
