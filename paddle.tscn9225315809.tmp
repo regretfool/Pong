@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://cc1g12ybwibbo"]
 
-[ext_resource type="Script" uid="uid://t8ghdbu6qd8f" path="res://paddle.gd" id="1_0sbc1"]
+[ext_resource type="Script" uid="uid://xcil2hxkqa2q" path="res://paddle.gd" id="1_0sbc1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ut3sq"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="StaticBody2D"]
 script = ExtResource("1_0sbc1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
