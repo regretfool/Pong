@@ -45,3 +45,4 @@ position = Vector2(539, 194)
 
 [node name="Ball" parent="." instance=ExtResource("3_vvh5c")]
 position = Vector2(320, 194)
+collision_layer = 4

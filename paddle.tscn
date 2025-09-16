@@ -4,7 +4,8 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ut3sq"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Paddle" type="CharacterBody2D"]
+collision_layer = 2
 script = ExtResource("1_0sbc1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
