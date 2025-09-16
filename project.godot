@@ -19,6 +19,10 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 window/size/viewport_width=640
 window/size/viewport_height=480
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dev_time_tracker/plugin.cfg")
+
 [input]
 
 up={
@@ -53,6 +57,7 @@ right={
 2d_physics/layer_1="walls"
 2d_physics/layer_2="paddles"
 2d_physics/layer_3="ball"
+2d_physics/layer_4="score_area"
 
 [rendering]
 
