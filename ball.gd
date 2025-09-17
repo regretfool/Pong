@@ -20,8 +20,3 @@ func _physics_process(delta: float) -> void:
 		# Returns the colliding body's attached Object (Wall-StaticBody2D).
 		# We can get properties and methods from it (like detecting hits(signal), name, etc)
 		#print_debug("I collided with ", collision.get_collider().name)
-
-
-func _on_score_area_body_entered(body: Node2D) -> void:
-	print_debug("I worked")
-	queue_free()

@@ -50,12 +50,9 @@ collision_layer = 4
 collision_mask = 11
 
 [node name="ScoreArea" parent="." instance=ExtResource("4_28aoi")]
-position = Vector2(86, 194)
-scale = Vector2(1.25, 17)
-collision_mask = 4
+position = Vector2(94, 194)
+scale = Vector2(0.839997, 16.36)
 
 [node name="ScoreArea2" parent="." instance=ExtResource("4_28aoi")]
-position = Vector2(554, 194)
-scale = Vector2(1.25, 17)
-
-[connection signal="body_entered" from="ScoreArea" to="Ball" method="_on_score_area_body_entered"]
+position = Vector2(546, 194)
+scale = Vector2(0.839997, 16.36)
